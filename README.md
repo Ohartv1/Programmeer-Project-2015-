@@ -1,6 +1,11 @@
 Programmeer-Project-2015
 =======
 
+Onno Hartveldt
+10972935
+juni 2015
+
+
 Ontwerpvoorstel
 -------
 
