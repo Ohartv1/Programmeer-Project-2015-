@@ -26,7 +26,7 @@ Door het selecteren van een perifeer artikelen zal de positie worden overgenomen
 
 De data wordt gescraped van PsyInfo en worden omgezet in een lijst van dictionaries per artikel. 
 
-[{Title: ,Doi: ,Referenced: ,Cited: }, {...}]
+[{Title: ,Doi: ,Reference: ,Cited: }, {...}]
 
 
 **Project onderdelen**
@@ -51,7 +51,7 @@ Mogelijk komt er een artikel voor met teveel citaties dan de visulatisatie aan k
 worden gesteld zodanig dat de probleemstelling beantwoord blijft.
 
 
-**gelijksoortige visualisaties**
+**Gelijksoortige visualisaties**
 
 In de eigenfactor visualisatie worden de relaties van publicaties in verschillende tijdschriften weergegeven.
 http://well-formed.eigenfactor.org/radial.html
