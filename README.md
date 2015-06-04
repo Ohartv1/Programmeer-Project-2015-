@@ -23,10 +23,12 @@ die het artikel refereren met de arcen rechts, onder het artikel van uitgangspun
 met de arcen links.
 
 Dynamisch:
-De volgorde kan worden gesorteerd aan de hand van het aantal citaties, cluster of alfabetisch.
+De volgorde kan worden gesorteerd aan de hand van generatie, het aantal citaties, cluster of alfabetisch.
 Door het selecteren van een perifeer artikelen zal de positie worden overgenomen van het centrale uitgangspunt. 
 
-
+![interface schets] (/DOCS/DSC_0151.JPG)  
+  
+  
 **Data bron**
 
 De data wordt gescraped van PsyInfo en worden omgezet in een lijst van dictionaries per artikel. 
