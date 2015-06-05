@@ -8,7 +8,7 @@ minimaal: de verticale arc-diagram, tooltip met artikel informatie.
 
 aanvullingen: sortering van de artikelen, generatie, aantal citaties, clusters, alfabetisch.
 
-![interface schets] (/DOCS/arc-diagram.PNG)  
+![interface schets] (/DOCS/arc-diagram.png)  
 
 **objecten en functies**  
 scraper:  
