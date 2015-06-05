@@ -3,8 +3,9 @@ import json
 from pattern.web import URL, DOM, plaintext
 
 TARGET_URL = "http://apps.webofknowledge.com"
-TARGET_query = "/full_record.do?product=UA&search_mode=GeneralSearch&qid=8&SID=P1xkMFYxAIRfFuaGs4Z&page=1&doc=1"
-test_query = "/CitingArticles.do?product=WOS&REFID=22967726&SID=P1xkMFYxAIRfFuaGs4Z&search_mode=CitingArticles&parentProduct=UA&parentQid=8&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage"
+#TARGET_query = "/full_record.do?product=UA&search_mode=GeneralSearch&qid=8&SID=P1xkMFYxAIRfFuaGs4Z&page=1&doc=1"
+TARGET_query = "/full_record.do?product=UA&search_mode=GeneralSearch&qid=8&doc=1"
+test_query = "/CitingArticles.do?product=WOS&REFID=22967726&search_mode=CitingArticles&parentProduct=UA&parentQid=8&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage"
 
 def crawl(article):
 
@@ -27,6 +28,10 @@ def cited_by(query):
     url = URL(TARGET_URL + query)
     print url
     html = url.download()
+
+
+    with open('test.html', 'w') as f:
+        f.write(html)
 
 
     # Parse the HTML file into a DOM representation
