@@ -32,7 +32,7 @@ def crawl(browser, article, generation):
         
             if current.get("link_cited") != None:
                 list_of_articles = list_of_articles + crawl(browser, current, generation)
-        list_of_articles.append(article.update({"cited_by": list_of_citions}))
+        list_of_articles.append(article.update({"cited_by": list_of_citations}))
     print "articles in list:", len(list_of_articles)
     return list_of_articles
     
