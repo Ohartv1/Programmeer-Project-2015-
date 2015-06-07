@@ -6,13 +6,6 @@ from selenium.webdriver.common.keys import Keys
 
 
 
-
-
-
-
-
-
-
 TARGET = "http://apps.webofknowledge.com"
 
 def crawl(browser, article):
@@ -28,21 +21,21 @@ def crawl(browser, article):
 
     
     list_of_articles = []
-    for each in cited_by(browser, article.get("link_cited")):
-        # Download the HTML file of starting point
-        url = URL(each)
-        html = url.download()
+    if article.get("link_cited") != None:
 
-        # Parse the HTML file into a DOM representation
-        dom = DOM(html)
-        current = scrape_reference(dom)
+        for each in cited_by(browser, article.get("link_cited")):
+            # Download the HTML file of starting point
+            url = URL(each)
+            html = url.download()
 
-        list_of_articles.append(current)
+            # Parse the HTML file into a DOM representation
+            dom = DOM(html)
+            current = scrape_reference(dom)
+            time.sleep(2)
+            list_of_articles.append(current)
+        
 
-        temp_list = list_of_articles + crawl(browser, current)
-
-
-
+            list_of_articles = list_of_articles + crawl(browser, current)
 
     return list_of_articles
     
@@ -51,7 +44,6 @@ def cited_by(browser, url):
     """
     """
     browser.get(url)
-    content = browser.page_source
     page_bottom = browser.find_element_by_id("pageCount.bottom").text
 
 
@@ -93,14 +85,20 @@ def scrape_reference(dom):
 
     # title
     for line in dom.by_class("title"):
-        for part in line.by_class("hitHilite"):
-            article_name = plaintext(line.content.encode("ascii", "ignore"))
-            data_dict.update({"title": article_name})
+        article_name = plaintext(line.content.encode("ascii", "ignore"))
+        data_dict.update({"title": article_name})
 
-     
-        # DOI
-        doi = plaintext(dom.by_tag("value")[5].content)
-        data_dict.update({"doi": doi})
+    # authors
+    author_list = []
+    for author in dom.by_attr(title="Find more records by this author"):
+        author = plaintext(author.content.encode("ascii", "ignore"))
+        author_list.append(author)
+    data_dict.update({"authors": author_list})
+
+
+    # DOI
+    doi = plaintext(dom.by_tag("value")[5].content)
+    data_dict.update({"doi": doi})
 
     # Cited link
     for link in dom.by_attr(title="View all of the articles that cite this one"):
@@ -108,8 +106,6 @@ def scrape_reference(dom):
         data_dict.update({"link_cited": TARGET + link})
 
 
-
-    print data_dict
     return data_dict
 
 
