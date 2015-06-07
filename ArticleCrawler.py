@@ -4,23 +4,18 @@ from pattern.web import URL, DOM, plaintext
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-
-
 TARGET = "http://apps.webofknowledge.com"
+SEARCH_FOR = "Determinants and mechanisms in ego identity development: A review and synthesis"
 
-def crawl(browser, article):
+generation = 1
 
-    # temp_list = []
-    # for url in cited_by(browser, first.get("link_cited")):
-        # make a dom
-        # scrape 
-        # place in temp_list
-        # temp_list = temp_list + crawl(temp_list)
-
-    # list_of_articles = list_of_articles + temp_list
+def crawl(browser, article, generation):
+    print generation
+    generation = generation + 1
 
     
     list_of_articles = []
+    list_of_citations = []
     if article.get("link_cited") != None:
 
         for each in cited_by(browser, article.get("link_cited")):
@@ -31,12 +26,14 @@ def crawl(browser, article):
             # Parse the HTML file into a DOM representation
             dom = DOM(html)
             current = scrape_reference(dom)
-            time.sleep(2)
+            list_of_citations.append(current.get("title"))
+            time.sleep(1)
             list_of_articles.append(current)
         
-
-            list_of_articles = list_of_articles + crawl(browser, current)
-
+            if current.get("link_cited") != None:
+                list_of_articles = list_of_articles + crawl(browser, current, generation)
+        list_of_articles.append(article.update({"cited_by": list_of_citions}))
+    print "articles in list:", len(list_of_articles)
     return list_of_articles
     
 
@@ -113,7 +110,7 @@ if __name__ == '__main__':
     # create webbrowser
     browser = webdriver.Firefox()
 
-    START_URL = give_start(browser, TARGET, "Determinants and mechanisms in ego identity development: A review and synthesis")
+    START_URL = give_start(browser, TARGET, SEARCH_FOR)
 
     # Download the HTML file of starting point
     url = URL(START_URL)
@@ -127,7 +124,7 @@ if __name__ == '__main__':
 
     # List of all articles
     list_of_articles = []
-    list_of_articles = list_of_articles + crawl(browser, first)
+    list_of_articles = list_of_articles + crawl(browser, first, generation)
 
     browser.close()
 
