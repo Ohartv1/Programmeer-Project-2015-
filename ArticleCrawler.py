@@ -1,57 +1,98 @@
 
-import json, time, unicodedata
+import json, time, unicodedata, socket
 from pattern.web import URL, DOM, plaintext
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 TARGET = "http://apps.webofknowledge.com"
-SEARCH_FOR = "Determinants and mechanisms in ego identity development: A review and synthesis"
+SEARCH_FOR = "The Nature-Nurture Debates: 25 Years of Challenges in Understanding the Psychology of Gender"
+temp = "Determinants and mechanisms in ego identity development: A review and synthesis"
 
 generation = 1
 
 def crawl(browser, article, generation):
-    print generation
     generation = generation + 1
 
-    
+    master_article = article
+
     list_of_articles = []
     list_of_citations = []
+
     if article.get("link_cited") != None:
 
-        for each in cited_by(browser, article.get("link_cited")):
-            # Download the HTML file of starting point
-            url = URL(each)
-            html = url.download()
+        iteration = 0
 
-            # Parse the HTML file into a DOM representation
-            dom = DOM(html)
-            current = scrape_reference(dom)
-            list_of_citations.append(current.get("title"))
-            time.sleep(1)
-            list_of_articles.append(current)
-        
-            if current.get("link_cited") != None:
-                list_of_articles = list_of_articles + crawl(browser, current, generation)
-        list_of_articles.append(article.update({"cited_by": list_of_citations}))
-    print "articles in list:", len(list_of_articles)
+        for each in cited_by(browser, article.get("link_cited")):
+            print "generation:", generation, "iteration:", iteration
+            iteration = iteration + 1
+
+            if each == None:
+                print "break, no citations"
+                break
+            try:          
+                # Download the HTML file of starting point
+                url = URL(each)
+                html = url.download()
+
+                # Parse the HTML file into a DOM representation
+                dom = DOM(html)
+                current = scrape_reference(dom)
+
+                list_of_citations.append(current.get("title"))
+
+                if current.get("link_cited") != None:
+                    if len(list_of_articles) == 0:
+                        print list_of_articles
+                        list_of_articles = crawl(browser, current, generation)
+                    else:
+                        list_of_articles = list_of_articles + crawl(browser, current, generation)
+                        print len(list_of_articles)
+
+            except pattern.web.URLTimeout:
+                print "break at pattern.web.URLTimeout"
+                break
+        master_article.update({"cited_by": list_of_citations})
+        list_of_articles.append(master_article)
+    
     return list_of_articles
     
 
 def cited_by(browser, url):
     """
     """
-    browser.get(url)
-    page_bottom = browser.find_element_by_id("pageCount.bottom").text
-
-
     list_of_urls = []
 
+    try:
+        browser.get(url)
+        page_bottom = browser.find_element_by_id("pageCount.bottom").text
+    except socket.timeout as e:
+        try:
+            print "timeout error"
+            print "url at the time of error:", url
+            time.sleep(60)
+            browser.get(url)
+            socket.setdefaulttimeout(60)
+            page_bottom = browser.find_element_by_id("pageCount.bottom").text
+        except:
+            print "exception unkown"
+            return list_of_urls
+
+
+
     while True:
+
         links = browser.find_elements_by_class_name('smallV110')
+
+        iterations = len(links) / 2
+        while iterations > 0:
+            links.pop()
+            iterations = iterations - 1
+
 
         for link in links:  
             href = link.get_attribute("href")
             list_of_urls.append(href)
+
 
         stop = browser.find_element_by_class_name("goToPageNumber-input")
         stop = stop.get_attribute("value")
@@ -122,13 +163,11 @@ if __name__ == '__main__':
     # scrape:
     first = scrape_reference(dom)
 
-    # List of all articles
-    list_of_articles = []
-    list_of_articles = list_of_articles + crawl(browser, first, generation)
+    # List of all article
+    list_of_articles = crawl(browser, first, generation)
 
     browser.close()
 
-    # parse and write to JSON
-    out = json.dumps(list_of_articles)
-    f = open("Data.json", "w")
-    f.write(out)
+    # # parse and write to JSON
+    with open("Data.json", "a") as outfile:
+        json.dump(list_of_articles, outfile, indent=2)
