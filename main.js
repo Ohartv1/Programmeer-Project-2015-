@@ -4,12 +4,15 @@
 
 /* GLOBALS */
 
+"use strict";
+
 var width  = 960;           // width of svg image
-var height = 400;           // height of svg image
+var height = 560;           // height of svg image
 var margin = 20;            // amount of margin around plot area
 var pad = margin / 2;       // actual padding amount
 var radius = 4;             // fixed node radius
 var yfixed = pad + radius;  // y position for all nodes
+var xfixed = width / 2;
 
 /* HELPER FUNCTIONS */
 
@@ -28,20 +31,8 @@ function addTooltip(circle) {
         .attr("dy", -r * 2)
         .attr("id", "tooltip");
 
-    var offset = tooltip.node().getBBox().width / 2;
-
-    if ((x - offset) < 0) {
-        tooltip.attr("text-anchor", "start");
-        tooltip.attr("dx", -r);
-    }
-    else if ((x + offset) > (width - margin)) {
         tooltip.attr("text-anchor", "end");
-        tooltip.attr("dx", r);
-    }
-    else {
-        tooltip.attr("text-anchor", "middle");
-        tooltip.attr("dx", 0);
-    }
+        tooltip.attr("dy", 0);
 }
 
 /* MAIN DRAW METHOD */
@@ -82,11 +73,13 @@ function arcDiagram(graph) {
     drawNodes(graph.nodes);
 }
 
-// Layout nodes linearly, sorted by group
+// Layout nodes linearly, sorted by...
 function linearLayout(nodes) {
     // sort nodes by group
     nodes.sort(function(a, b) {
-        return a.group - b.group;
+        // return a.group - b.group;       //by group
+        // return a.generation - b.generation //by generation
+        return a.num_cit - b.num_cit;   //by citations 
     })
 
     // used to scale node index to x position
@@ -94,10 +87,16 @@ function linearLayout(nodes) {
         .domain([0, nodes.length - 1])
         .range([radius, width - margin - radius]);
 
+    var yscale = d3.scale.linear()
+        .domain([0, nodes.length - 1])
+        .range([radius, height - margin - radius]);
+
     // calculate pixel location for each node
     nodes.forEach(function(d, i) {
-        d.x = xscale(i);
-        d.y = yfixed;
+        // d.x = xscale(i); // horizontale weergave
+        // d.y = yfixed;    //
+        d.x = xfixed;       // vertikale weergave
+        d.y = yscale(i);    //
     });
 }
 
@@ -114,8 +113,8 @@ function drawNodes(nodes) {
         .attr("id", function(d, i) { return d.name; })
         .attr("cx", function(d, i) { return d.x; })
         .attr("cy", function(d, i) { return d.y; })
-        .attr("r",  function(d, i) { return radius; })
-        .style("fill",   function(d, i) { return color(d.group); })
+        .attr("r",  function(d, i) { return radius * (d.num_cit + 1) * 0.5; })
+        .style("fill",   function(d, i) { return color(1); })
         .on("mouseover", function(d, i) { addTooltip(d3.select(this)); })
         .on("mouseout",  function(d, i) { d3.select("#tooltip").remove(); });
 }
@@ -124,7 +123,7 @@ function drawNodes(nodes) {
 function drawLinks(links) {
     // scale to generate radians (just for lower-half of circle)
     var radians = d3.scale.linear()
-        .range([Math.PI / 2, 3 * Math.PI / 2]);
+        .range([Math.PI / 180, 2 * Math.PI / 2]);
 
     // path generator for arcs (uses polar coordinates)
     var arc = d3.svg.line.radial()
@@ -141,19 +140,19 @@ function drawLinks(links) {
         .attr("transform", function(d, i) {
             // arc will always be drawn around (0, 0)
             // shift so (0, 0) will be between source and target
-            var xshift = d.source.x + (d.target.x - d.source.x) / 2;
-            var yshift = yfixed;
+            var xshift = xfixed;
+            var yshift = d.source.y + (d.target.y - d.source.y) / 2;
             return "translate(" + xshift + ", " + yshift + ")";
         })
         .attr("d", function(d, i) {
-            // get x distance between source and target
-            var xdist = Math.abs(d.source.x - d.target.x);
+            // get y distance between source and target
+            var ydist = Math.abs(d.source.y - d.target.y);
 
             // set arc radius based on x distance
-            arc.radius(xdist / 2);
+            arc.radius(ydist / 2);
 
-            // want to generate 1/3 as many points per pixel in x direction
-            var points = d3.range(0, Math.ceil(xdist / 3));
+            // want to generate 1/3 as many points per pixel in y direction
+            var points = d3.range(0, Math.ceil(ydist / 3));
 
             // set radian scale domain
             radians.domain([0, points.length - 1]);
