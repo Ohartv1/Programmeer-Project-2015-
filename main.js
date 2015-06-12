@@ -78,8 +78,8 @@ function linearLayout(nodes) {
     // sort nodes by group
     nodes.sort(function(a, b) {
         // return a.group - b.group;       //by group
-        // return a.generation - b.generation //by generation
-        return a.num_cit - b.num_cit;   //by citations 
+        return b.generation - a.generation //by generation
+        // return a.num_cit - b.num_cit;   //by citations 
     })
 
     // used to scale node index to x position

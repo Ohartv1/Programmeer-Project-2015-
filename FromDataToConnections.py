@@ -9,7 +9,8 @@ for dic in data:
 	list_titles.append(dic.get("title"))
 	dict_nut = {}
 	dict_nut.update({"name": dic.get("title"), \
-		"num_cit": len(dic.get("cited_by"))})
+		"num_cit": len(dic.get("cited_by")), \
+		"generation": dic.get("generation")})
 	list_nodes.append(dict_nut)
 
 for dic in data:
@@ -17,7 +18,8 @@ for dic in data:
 		if not cit in list_titles:
 			dict_nut = {}
 			dict_nut.update({"name": cit, \
-				"num_cit": 0})
+				"num_cit": 0, \
+				"generation": dic.get("generation") + 1})
 			list_nodes.append(dict_nut)
 			list_titles.append(cit)
 
