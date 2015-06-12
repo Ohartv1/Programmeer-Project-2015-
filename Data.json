@@ -1,6 +1,7 @@
 [
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=478414934&SID=Y2aaPEg2kQRh6dHFVeN&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=2&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 3, 
+    "doi": "10.1007/s00114-014-1241-8", 
     "authors": [
       "Skrinda, I", 
       "Krama, T", 
@@ -12,116 +13,125 @@
       "Rantala, MJ", 
       "Krams, I"
     ], 
-    "doi": "10.1007/s00114-014-1241-8", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=478414934&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=2&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Body height, immunity, facial and vocal attractiveness in young men", 
     "cited_by": [
       "Pregnant Women's Preferences for Men's Faces Differ Significantly from Nonpregnant Women"
-    ], 
-    "title": "Body height, immunity, facial and vocal attractiveness in young men"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247732&SID=Y2aaPEg2kQRh6dHFVeN&search_mode=CitingArticles&parentProduct=WOS&parentQid=9&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 4, 
+    "doi": "10.1037/a0037714.supp", 
     "authors": [
       "Gildersleeve, K", 
       "Haselton, MG", 
       "Fales, MR"
     ], 
-    "doi": "10.1037/a0037714.supp", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247732&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=9&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)", 
     "cited_by": [
       "Looking Forward in Candidate Gene Research: Concerns and Suggestions", 
       "The Extent and Consequences of P-Hacking in Science"
-    ], 
-    "title": "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247703&SID=Y2aaPEg2kQRh6dHFVeN&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=4&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 3, 
+    "doi": "10.1037/a0036478", 
     "authors": [
       "Harris, CR", 
       "Pashler, H", 
       "Mickes, L"
     ], 
-    "doi": "10.1037/a0036478", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247703&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=4&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Elastic Analysis Procedures: An Incurable (but Preventable) Problem in the Fertility Effect Literature. Comment on Gildersleeve, Haselton, and Fales (2014)", 
     "cited_by": [
       "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)"
-    ], 
-    "title": "Elastic Analysis Procedures: An Incurable (but Preventable) Problem in the Fertility Effect Literature. Comment on Gildersleeve, Haselton, and Fales (2014)"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247732&SID=Y2aaPEg2kQRh6dHFVeN&search_mode=CitingArticles&parentProduct=WOS&parentQid=13&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 4, 
+    "doi": "10.1037/a0037714.supp", 
     "authors": [
       "Gildersleeve, K", 
       "Haselton, MG", 
       "Fales, MR"
     ], 
-    "doi": "10.1037/a0037714.supp", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247732&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=13&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)", 
     "cited_by": [
       "Looking Forward in Candidate Gene Research: Concerns and Suggestions", 
       "The Extent and Consequences of P-Hacking in Science"
-    ], 
-    "title": "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247731&SID=Y2aaPEg2kQRh6dHFVeN&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=5&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 3, 
+    "doi": "10.1037/a0036722", 
     "authors": [
       "Wood, W", 
       "Carden, L"
     ], 
-    "doi": "10.1037/a0036722", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247731&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=5&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Elusiveness of Menstrual Cycle Effects on Mate Preferences: Comment on Gildersleeve, Haselton, and Fales (2014)", 
     "cited_by": [
       "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)"
-    ], 
-    "title": "Elusiveness of Menstrual Cycle Effects on Mate Preferences: Comment on Gildersleeve, Haselton, and Fales (2014)"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247732&SID=Y2aaPEg2kQRh6dHFVeN&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=6&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 3, 
+    "doi": "10.1037/a0037714.supp", 
     "authors": [
       "Gildersleeve, K", 
       "Haselton, MG", 
       "Fales, MR"
     ], 
-    "doi": "10.1037/a0037714.supp", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247732&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=6&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)", 
     "cited_by": [
       "Looking Forward in Candidate Gene Research: Concerns and Suggestions", 
       "The Extent and Consequences of P-Hacking in Science"
-    ], 
-    "title": "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475560083&SID=Y2aaPEg2kQRh6dHFVeN&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=7&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 3, 
+    "doi": "AUG 28 2014", 
     "authors": [
       "Rippon, G", 
       "Jordan-Young, R", 
       "Kaiser, A", 
       "Fine, C"
     ], 
-    "doi": "AUG 28 2014", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475560083&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=7&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Recommendations for sex/gender neuroimaging research: key principles and implications for research design, analysis, and interpretation", 
     "cited_by": [
       "NEUROSCIENCE His brain, her brain?"
-    ], 
-    "title": "Recommendations for sex/gender neuroimaging research: key principles and implications for research design, analysis, and interpretation"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=473651495&SID=Y2aaPEg2kQRh6dHFVeN&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=8&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 3, 
+    "doi": "10.1177/1754073914523050", 
     "authors": [
       "Brown, GR", 
       "Cross, CP", 
       "Street, SE", 
       "Brand, CO"
     ], 
-    "doi": "10.1177/1754073914523050", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=473651495&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=8&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Comment: Beyond \"Evolutionary versus Social\": Moving the Cycle Shift Debate Forward", 
     "cited_by": [
       "Author Reply: Once Again, Menstrual Cycles and Mate Preferences"
-    ], 
-    "title": "Comment: Beyond \"Evolutionary versus Social\": Moving the Cycle Shift Debate Forward"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=473651494&SID=Y2aaPEg2kQRh6dHFVeN&search_mode=CitingArticles&parentProduct=WOS&parentQid=3&parentDoc=8&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 2, 
+    "doi": "10.1177/1754073914523073", 
     "authors": [
       "Wood, W", 
       "Kressel, L", 
       "Joshi, PD", 
       "Louie, B"
     ], 
-    "doi": "10.1177/1754073914523073", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=473651494&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=3&parentDoc=8&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Meta-Analysis of Menstrual Cycle Effects on Women's Mate Preferences", 
     "cited_by": [
       "Menstrual Cycle Phase Does Not Predict Political Conservatism", 
       "Body height, immunity, facial and vocal attractiveness in young men", 
@@ -133,311 +143,87 @@
       "Comment: Beyond \"Evolutionary versus Social\": Moving the Cycle Shift Debate Forward", 
       "Author Reply: Once Again, Menstrual Cycles and Mate Preferences", 
       "Provision or Good Genes? Menstrual Cycle Shifts in Women's Preferences for Short-Term and Long-Term Mates' Altruistic Behavior"
-    ], 
-    "title": "Meta-Analysis of Menstrual Cycle Effects on Women's Mate Preferences"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=473651495&SID=Y2aaPEg2kQRh6dHFVeN&search_mode=CitingArticles&parentProduct=WOS&parentQid=3&parentDoc=9&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 2, 
+    "doi": "10.1177/1754073914523050", 
     "authors": [
       "Brown, GR", 
       "Cross, CP", 
       "Street, SE", 
       "Brand, CO"
     ], 
-    "doi": "10.1177/1754073914523050", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=473651495&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=3&parentDoc=9&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Comment: Beyond \"Evolutionary versus Social\": Moving the Cycle Shift Debate Forward", 
     "cited_by": [
       "Author Reply: Once Again, Menstrual Cycles and Mate Preferences"
-    ], 
-    "title": "Comment: Beyond \"Evolutionary versus Social\": Moving the Cycle Shift Debate Forward"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=451528217&SID=Y2aaPEg2kQRh6dHFVeN&search_mode=CitingArticles&parentProduct=UA&parentQid=1&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Eagly, AH", 
-      "Wood, W"
-    ], 
-    "doi": "10.1177/1745691613484767", 
-    "cited_by": [
-      "Evaluating Gender Similarities and Differences Using Metasynthesis", 
-      "Revisiting gender differences: What we know and what lies ahead", 
-      "Voluntary and involuntary emotional memory following an analogue traumatic stressor: The differential effects of communality in men and women", 
-      "Feminism and Psychology Critiques of Methods and Epistemology", 
-      "Reasoning About Single-Sex Schooling for Girls Among Students, Parents, and Teachers", 
-      "Evidence for the Social Role Theory of Stereotype Content: Observations of Groups' Roles Shape Stereotypes", 
-      "Mixing of gender and trades: consequences for identity and working relationships", 
-      "Meta-Analysis of Menstrual Cycle Effects on Women's Mate Preferences", 
-      "Comment: Beyond \"Evolutionary versus Social\": Moving the Cycle Shift Debate Forward", 
-      "Stress among Italian male and female patrol police officers: a quali-quantitative survey"
-    ], 
-    "title": "The Nature-Nurture Debates: 25 Years of Challenges in Understanding the Psychology of Gender"
-  }
-][
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=478414934&SID=V2TVNrT6Ac4BtEwXDFB&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=2&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Skrinda, I", 
-      "Krama, T", 
-      "Kecko, S", 
-      "Moore, FR", 
-      "Kaasik, A", 
-      "Meija, L", 
-      "Lietuvietis, V", 
-      "Rantala, MJ", 
-      "Krams, I"
-    ], 
-    "doi": "10.1007/s00114-014-1241-8", 
-    "cited_by": [
-      "Pregnant Women's Preferences for Men's Faces Differ Significantly from Nonpregnant Women"
-    ], 
-    "title": "Body height, immunity, facial and vocal attractiveness in young men"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=473651494&SID=V2TVNrT6Ac4BtEwXDFB&search_mode=CitingArticles&parentProduct=WOS&parentQid=3&parentDoc=8&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Wood, W", 
-      "Kressel, L", 
-      "Joshi, PD", 
-      "Louie, B"
-    ], 
-    "doi": "10.1177/1754073914523073", 
-    "cited_by": [
-      "Menstrual Cycle Phase Does Not Predict Political Conservatism", 
-      "Body height, immunity, facial and vocal attractiveness in young men", 
-      "Human preferences for sexually dimorphic faces may be evolutionarily novel", 
-      "Elastic Analysis Procedures: An Incurable (but Preventable) Problem in the Fertility Effect Literature. Comment on Gildersleeve, Haselton, and Fales (2014)"
-    ], 
-    "title": "Meta-Analysis of Menstrual Cycle Effects on Women's Mate Preferences"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=451528217&SID=V2TVNrT6Ac4BtEwXDFB&search_mode=CitingArticles&parentProduct=UA&parentQid=1&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Eagly, AH", 
-      "Wood, W"
-    ], 
-    "doi": "10.1177/1745691613484767", 
-    "cited_by": [
-      "Evaluating Gender Similarities and Differences Using Metasynthesis", 
-      "Revisiting gender differences: What we know and what lies ahead", 
-      "Voluntary and involuntary emotional memory following an analogue traumatic stressor: The differential effects of communality in men and women", 
-      "Feminism and Psychology Critiques of Methods and Epistemology", 
-      "Reasoning About Single-Sex Schooling for Girls Among Students, Parents, and Teachers", 
-      "Evidence for the Social Role Theory of Stereotype Content: Observations of Groups' Roles Shape Stereotypes", 
-      "Mixing of gender and trades: consequences for identity and working relationships", 
-      "Meta-Analysis of Menstrual Cycle Effects on Women's Mate Preferences", 
-      "Comment: Beyond \"Evolutionary versus Social\": Moving the Cycle Shift Debate Forward"
-    ], 
-    "title": "The Nature-Nurture Debates: 25 Years of Challenges in Understanding the Psychology of Gender"
-  }
-][
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=478414934&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=2&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Skrinda, I", 
-      "Krama, T", 
-      "Kecko, S", 
-      "Moore, FR", 
-      "Kaasik, A", 
-      "Meija, L", 
-      "Lietuvietis, V", 
-      "Rantala, MJ", 
-      "Krams, I"
-    ], 
-    "doi": "10.1007/s00114-014-1241-8", 
-    "cited_by": [
-      "Pregnant Women's Preferences for Men's Faces Differ Significantly from Nonpregnant Women"
-    ], 
-    "title": "Body height, immunity, facial and vocal attractiveness in young men"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247732&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=9&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Gildersleeve, K", 
-      "Haselton, MG", 
-      "Fales, MR"
-    ], 
-    "doi": "10.1037/a0037714.supp", 
-    "cited_by": [
-      "Looking Forward in Candidate Gene Research: Concerns and Suggestions", 
-      "The Extent and Consequences of P-Hacking in Science"
-    ], 
-    "title": "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247703&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=4&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Harris, CR", 
-      "Pashler, H", 
-      "Mickes, L"
-    ], 
-    "doi": "10.1037/a0036478", 
-    "cited_by": [
-      "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)"
-    ], 
-    "title": "Elastic Analysis Procedures: An Incurable (but Preventable) Problem in the Fertility Effect Literature. Comment on Gildersleeve, Haselton, and Fales (2014)"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247732&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=13&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Gildersleeve, K", 
-      "Haselton, MG", 
-      "Fales, MR"
-    ], 
-    "doi": "10.1037/a0037714.supp", 
-    "cited_by": [
-      "Looking Forward in Candidate Gene Research: Concerns and Suggestions", 
-      "The Extent and Consequences of P-Hacking in Science"
-    ], 
-    "title": "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247731&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=5&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Wood, W", 
-      "Carden, L"
-    ], 
-    "doi": "10.1037/a0036722", 
-    "cited_by": [
-      "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)"
-    ], 
-    "title": "Elusiveness of Menstrual Cycle Effects on Mate Preferences: Comment on Gildersleeve, Haselton, and Fales (2014)"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475247732&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=6&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Gildersleeve, K", 
-      "Haselton, MG", 
-      "Fales, MR"
-    ], 
-    "doi": "10.1037/a0037714.supp", 
-    "cited_by": [
-      "Looking Forward in Candidate Gene Research: Concerns and Suggestions", 
-      "The Extent and Consequences of P-Hacking in Science"
-    ], 
-    "title": "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=475560083&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=7&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Rippon, G", 
-      "Jordan-Young, R", 
-      "Kaiser, A", 
-      "Fine, C"
-    ], 
-    "doi": "AUG 28 2014", 
-    "cited_by": [
-      "NEUROSCIENCE His brain, her brain?"
-    ], 
-    "title": "Recommendations for sex/gender neuroimaging research: key principles and implications for research design, analysis, and interpretation"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=473651495&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=5&parentDoc=8&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Brown, GR", 
-      "Cross, CP", 
-      "Street, SE", 
-      "Brand, CO"
-    ], 
-    "doi": "10.1177/1754073914523050", 
-    "cited_by": [
-      "Author Reply: Once Again, Menstrual Cycles and Mate Preferences"
-    ], 
-    "title": "Comment: Beyond \"Evolutionary versus Social\": Moving the Cycle Shift Debate Forward"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=473651494&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=3&parentDoc=8&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Wood, W", 
-      "Kressel, L", 
-      "Joshi, PD", 
-      "Louie, B"
-    ], 
-    "doi": "10.1177/1754073914523073", 
-    "cited_by": [
-      "Menstrual Cycle Phase Does Not Predict Political Conservatism", 
-      "Body height, immunity, facial and vocal attractiveness in young men", 
-      "Human preferences for sexually dimorphic faces may be evolutionarily novel", 
-      "Elastic Analysis Procedures: An Incurable (but Preventable) Problem in the Fertility Effect Literature. Comment on Gildersleeve, Haselton, and Fales (2014)", 
-      "Elusiveness of Menstrual Cycle Effects on Mate Preferences: Comment on Gildersleeve, Haselton, and Fales (2014)", 
-      "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)", 
-      "Recommendations for sex/gender neuroimaging research: key principles and implications for research design, analysis, and interpretation", 
-      "Comment: Beyond \"Evolutionary versus Social\": Moving the Cycle Shift Debate Forward", 
-      "Author Reply: Once Again, Menstrual Cycles and Mate Preferences", 
-      "Provision or Good Genes? Menstrual Cycle Shifts in Women's Preferences for Short-Term and Long-Term Mates' Altruistic Behavior"
-    ], 
-    "title": "Meta-Analysis of Menstrual Cycle Effects on Women's Mate Preferences"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=473651495&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=3&parentDoc=9&excludeEventConfig=ExcludeIfFromFullRecPage", 
-    "authors": [
-      "Brown, GR", 
-      "Cross, CP", 
-      "Street, SE", 
-      "Brand, CO"
-    ], 
-    "doi": "10.1177/1754073914523050", 
-    "cited_by": [
-      "Author Reply: Once Again, Menstrual Cycles and Mate Preferences"
-    ], 
-    "title": "Comment: Beyond \"Evolutionary versus Social\": Moving the Cycle Shift Debate Forward"
-  }, 
-  {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=482566563&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=25&parentDoc=2&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 3, 
+    "doi": "FEB 17 2015", 
     "authors": [
       "Miller, DI", 
       "Wai, J"
     ], 
-    "doi": "FEB 17 2015", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=482566563&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=25&parentDoc=2&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "The bachelor's to Ph.D. STEM pipeline no longer leaks more women than men: a 30-year analysis", 
     "cited_by": [
       "Leading scientists favour women in tenure-track hiring test"
-    ], 
-    "title": "The bachelor's to Ph.D. STEM pipeline no longer leaks more women than men: a 30-year analysis"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=471255681&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=25&parentDoc=3&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 3, 
+    "doi": "10.3109/07420528.2014.898649", 
     "authors": [
       "Escribano, C", 
       "Francisco Diaz-Morales, J"
     ], 
-    "doi": "10.3109/07420528.2014.898649", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=471255681&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=25&parentDoc=3&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Daily fluctuations in attention at school considering starting time and chronotype: an exploratory study", 
     "cited_by": [
       "Timing of Examinations Affects School Performance Differently in Early and Late Chronotypes", 
       "Chronotype and time-of-day effects on mood during school day"
-    ], 
-    "title": "Daily fluctuations in attention at school considering starting time and chronotype: an exploratory study"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=467685169&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=3&parentDoc=11&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 2, 
+    "doi": "10.1016/j.tics.2013.10.011", 
     "authors": [
       "Miller, DI", 
       "Halpern, DF"
     ], 
-    "doi": "10.1016/j.tics.2013.10.011", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=467685169&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=3&parentDoc=11&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "The new science of cognitive sex differences", 
     "cited_by": [
       "On the gender science stereotypes held by scientists: explicit accord with gender-ratios, implicit accord with scientific identity", 
       "The bachelor's to Ph.D. STEM pipeline no longer leaks more women than men: a 30-year analysis", 
       "Daily fluctuations in attention at school considering starting time and chronotype: an exploratory study"
-    ], 
-    "title": "The new science of cognitive sex differences"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=462044411&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=WOS&parentQid=3&parentDoc=12&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 2, 
+    "doi": "SI", 
     "authors": [
       "Eagly, AH", 
       "Wood, W"
     ], 
-    "doi": "SI", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=462044411&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=WOS&parentQid=3&parentDoc=12&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "Feminism and Evolutionary Psychology: Moving Forward", 
     "cited_by": [
       "The Human Dark Side: Evolutionary Psychology and Original Sin"
-    ], 
-    "title": "Feminism and Evolutionary Psychology: Moving Forward"
+    ]
   }, 
   {
-    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=451528217&SID=Q2iHU2kEjJCwZeQa9lR&search_mode=CitingArticles&parentProduct=UA&parentQid=1&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "generation": 1, 
+    "doi": "10.1177/1745691613484767", 
     "authors": [
       "Eagly, AH", 
       "Wood, W"
     ], 
-    "doi": "10.1177/1745691613484767", 
+    "link_cited": "http://apps.webofknowledge.com/CitingArticles.do?product=WOS&REFID=451528217&SID=T2QWi79n3AcgGfI1Zae&search_mode=CitingArticles&parentProduct=UA&parentQid=1&parentDoc=1&excludeEventConfig=ExcludeIfFromFullRecPage", 
+    "title": "The Nature-Nurture Debates: 25 Years of Challenges in Understanding the Psychology of Gender", 
     "cited_by": [
       "Evaluating Gender Similarities and Differences Using Metasynthesis", 
       "Revisiting gender differences: What we know and what lies ahead", 
@@ -452,7 +238,6 @@
       "The new science of cognitive sex differences", 
       "Feminism and Evolutionary Psychology: Moving Forward", 
       "Biology or Culture Alone Cannot Account for Human Sex Differences and Similarities"
-    ], 
-    "title": "The Nature-Nurture Debates: 25 Years of Challenges in Understanding the Psychology of Gender"
+    ]
   }
 ]

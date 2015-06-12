@@ -8,7 +8,7 @@ TARGET = "http://apps.webofknowledge.com"
 SEARCH_FOR = "The Nature-Nurture Debates: 25 Years of Challenges in Understanding the Psychology of Gender"
 temp = "Determinants and mechanisms in ego identity development: A review and synthesis"
 
-generation = 1
+generation = 0
 
 def crawl(browser, article, generation):
     generation = generation + 1
@@ -23,7 +23,7 @@ def crawl(browser, article, generation):
         iteration = 0
 
         for each in cited_by(browser, article.get("link_cited")):
-            print "generation:", generation, "iteration:", iteration
+            # print "generation:", generation, "iteration:", iteration
             iteration = iteration + 1
 
             if each == None:
@@ -37,6 +37,7 @@ def crawl(browser, article, generation):
                 # Parse the HTML file into a DOM representation
                 dom = DOM(html)
                 current = scrape_reference(dom)
+                
 
                 list_of_citations.append(current.get("title"))
 
@@ -51,7 +52,7 @@ def crawl(browser, article, generation):
             except pattern.web.URLTimeout:
                 print "break at pattern.web.URLTimeout"
                 break
-        master_article.update({"cited_by": list_of_citations})
+        master_article.update({"cited_by": list_of_citations, "generation": generation})
         list_of_articles.append(master_article)
     
     return list_of_articles
