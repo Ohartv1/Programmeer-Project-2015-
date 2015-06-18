@@ -25,7 +25,7 @@ b {
 }
 
 #tooltip {
-    font-size: 10pt;
+    font-size: 5pt;
     font-weight: 900;
 
     fill: #000000;
@@ -49,4 +49,10 @@ b {
     stroke: red;
     stroke-weight: 4px;
     stroke-opacity: 1.0;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
