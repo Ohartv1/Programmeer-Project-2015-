@@ -36,6 +36,7 @@ b {
 .node {
     stroke: #ffffff;
     stroke-weight: 1px;
+    stroke-opacity: 1.0;
 }
 
 .link {

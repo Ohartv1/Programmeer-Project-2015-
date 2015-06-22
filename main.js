@@ -14,7 +14,7 @@ var radius = 4;             // fixed node radius
 var yfixed = pad + radius;  // y position for all nodes
 var xfixed = width / 2;
 
-var color = d3.scale.category20();
+var color = d3.scale.category10();
 
 var yscale = d3.scale.linear()
     .range([radius, height - margin - radius]);
@@ -28,6 +28,12 @@ var arc = d3.svg.line.radial()
     .interpolate("basis")
     .tension(0)
     .angle(function(d) { return radians(d); });
+
+//Toggle stores whether the highlighting is on
+var toggle = 0;
+//Create an array logging what is connected to what
+var linkedByYPosition = {};
+
 
 
 /* HELPER FUNCTIONS */
@@ -78,6 +84,7 @@ function arcDiagram(graph) {
         d.target = isNaN(d.target) ? d.target : graph.nodes[d.target];
     });
 
+    graph = graph
 
     d3.select("input").on("change", change);
 
@@ -88,7 +95,7 @@ function arcDiagram(graph) {
     drawLinks(graph.links);
 
     // draw nodes last
-    drawNodes(graph.nodes);
+    drawNodes(graph);
 }
 
 
@@ -121,7 +128,7 @@ function linearLayout(nodes) {
 
 
 // change linear layout with different sorting
-function change(svg) {
+function change() {
 
     d3.select("#plot").selectAll(".node")
         .sort(this.checked
@@ -139,7 +146,6 @@ function change(svg) {
 
     transition.selectAll(".node")
         .delay(delay)
-        .style("fill",   function(d, i) { return color(d.generation); })
         .attr("cy", function(d, i) { return yscale(i); });
 
 
@@ -168,16 +174,15 @@ function change(svg) {
             // return path for arc
             return arc(points);
         })
-        .attr('stroke', 'red')
 }
 
 
 // Draws nodes on plot
-function drawNodes(nodes) {
+function drawNodes(graph) {
     // used to assign nodes color by group
     
     d3.select("#plot").selectAll(".node")
-        .data(nodes)
+        .data(graph.nodes)
         .enter()
         .append("circle")
         .attr("class", "node")
@@ -187,7 +192,26 @@ function drawNodes(nodes) {
         .attr("r",  function(d, i) { return radius; })
         .style("fill",   function(d, i) { return color(d.generation); })
         .on("mouseover", function(d, i) { addTooltip(d3.select(this)); })
-        .on("mouseout",  function(d, i) { d3.select("#tooltip").remove(); });
+        .on("mouseout",  function(d, i) { d3.select("#tooltip").remove(); })
+        .on("click", function(p, i){
+            highLight(graph, i);
+        });
+        
+
+    // save linked articles to highlight at later moment
+    // for (var i = 0; i < graph.nodes.length; i++) {
+    //     linkedByIndex[i + "," + i] = 1;
+    // };
+
+    graph.nodes.forEach(function (d) {
+        linkedByYPosition[parseInt(d.y) + "," + parseInt(d.y)] = 1;
+    });
+
+    // console.log(linkedByIndex);
+    graph.links.forEach(function (d) {
+        linkedByYPosition[parseInt(d.source.y) + "," + parseInt(d.target.y)] = 1;
+    });
+
 }
 
 // Draws arcs for each link on plot
@@ -224,4 +248,51 @@ function drawLinks(links) {
             return arc(points);
         });
 }
+
+
+//This function looks up whether a pair are neighbours
+function neighboring(a, b) {
+    return linkedByYPosition[parseInt(a.y) + "," + parseInt(b.y)];
+}
+
+function highLight(graph, i) {
+    // Source: http://www.coppelia.io/2014/07/an-a-to-z-of-extra-features-for-the-d3-force-layout/ 
+    //
+
+    if (toggle == 0) {
+        //Reduce the opacity of all but the neighbouring nodes
+        var d = graph.nodes[i];
+
+        d3.selectAll(".node").each( function(a) {
+            d3.select(this).style("opacity", function (o) {
+                return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1; });
+        }); 
+
+        d3.selectAll(".link").each( function(a) {
+            d3.select(this).style("opacity", function (o) {
+                return neighboring(d, o.source) | neighboring(d, o.target) ? 1 : 0.1; });
+        });
+
+        //Reduce the op
+        toggle = 1; 
+    } 
+        else {
+        //Put them back to opacity=1
+        d3.selectAll(".node").style("opacity", 1);
+        d3.selectAll(".link").style("opacity", 1);
+        toggle = 0; 
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
