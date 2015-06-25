@@ -1,13 +1,14 @@
 /*
-	Onno Hartveldt
-	10972935
-	Where to start reading?
+    Onno Hartveldt
+    10972935
+
+    visualisation:
+    "Wie zijn de nakomelingen van een wetenschappelijke publicatie?"
 */
 
 /* 
 	source: http://bl.ocks.org/sjengle/5431779
 */
-
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -19,7 +20,7 @@ b {
 }
 
 .outline {
-    fill: none;
+    fill: #fafafa;
     stroke: #888888;
     stroke-width: 1px;
 }
@@ -27,28 +28,23 @@ b {
 #tooltip {
     font-size: 5pt;
     font-weight: 900;
-
     fill: #000000;
     stroke: #ffffff;
     stroke-width: 0.25px;
 }
 
 .node {
-    stroke: #ffffff;
-    stroke-weight: 1px;
     stroke-opacity: 1.0;
 }
 
 .link {
     fill: none;
-    stroke: #888888;
-    stroke-weight: 1px;
+    stroke: #fe9929;
     stroke-opacity: 0.5;
 }
 
 .highlight {
     stroke: red;
-    stroke-weight: 4px;
     stroke-opacity: 1.0;
 }
 
@@ -56,4 +52,35 @@ label {
   position: absolute;
   top: 10px;
   left: 10px;
+  font-size: 8pt;
+}
+
+.important {
+    font-size: 5pt;
+    font-weight: 900;
+    fill: #000000;
+    stroke: #ffffff;
+    stroke-width: 0.25px;
+}
+
+
+/*Sourse: http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900|Source+Code+Pro:300*/
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url(http://fonts.gstatic.com/s/sourcecodepro/v6/leqv3v-yTsJNC7nFznSMqeode0-EuMkY--TSyExeINg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/sourcecodepro/v6/leqv3v-yTsJNC7nFznSMqdbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGOode0-EuMkY--TSyExeINg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGHZhYM0_6AejPZE-OqA592o.woff2) format('woff2'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGHiec-hVyr2k4iOzEQsW1iE.woff) format('woff');
 }

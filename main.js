@@ -1,4 +1,10 @@
-/*
+/*  
+    Onno Hartveldt
+    10972935
+
+    visualisation:
+    "Wie zijn de nakomelingen van een wetenschappelijke publicatie?"
+
     source: http://bl.ocks.org/sjengle/5431779
 */
 
@@ -14,7 +20,6 @@ var radius = 4;             // fixed node radius
 var yfixed = pad + radius;  // y position for all nodes
 var xfixed = width / 2;
 
-var color = d3.scale.category20();
 
 var yscale = d3.scale.linear()
     .range([radius, height - margin - radius]);
@@ -31,9 +36,6 @@ var arc = d3.svg.line.radial()
 
 //Toggle stores whether the highlighting is on
 var toggle = 0;
-var toggle1 = 0;
-
-
 
 
 /* MAIN DRAW METHOD */
@@ -84,7 +86,7 @@ function arcDiagram(graph) {
 function linearLayout(nodes) {
     // sort nodes by group
     nodes.sort(function(a, b) {
-        return a.num_cit - b.num_cit;   //by citations 
+        return a.name.length - b.name.length;   //by citations 
     });
 
     // used to scale node index to x position
@@ -112,6 +114,7 @@ function drawNodes(graph) {
         .enter()
         .append("g")
         .attr("class", "node")
+        .style("stroke", function(d) {return d.generation == 1 ? "#000000" : "#ffffff"; })
         .on("click", function(p, i) { makeImportant(d3.select(this)); })
 
     tmp.append("circle")
@@ -198,7 +201,6 @@ function addTooltip(node) {
 // Lowers the opacity of the phericial nodes and links of the selection
 function highLight(graph, i) {
     // Source: http://www.coppelia.io/2014/07/an-a-to-z-of-extra-features-for-the-d3-force-layout/ 
-    //
 
     //This function looks up whether a pair are neighbours
     function neighboring(a, b) {
@@ -242,18 +244,15 @@ function highLight(graph, i) {
 }
 
 
-// makes a select node recognisable
+// makes a select node and its links recognisable
 function makeImportant(node){
-
     
     node.select("circle").attr("toggle", function(o) {
         return node.select("circle").attr("toggle") == 0 ? 1 : 0 ;
     });
 
-
     node.each( function(a) {
         node.select(".important").style("visibility", function (o) {
-            console.log(node.select("circle").attr("toggle"));
             return node.select("circle").attr("toggle") == 1 ? "visible" : "hidden"; });
     }); 
 
@@ -266,7 +265,7 @@ function change() {
     d3.select("#plot").selectAll(".node")
         .sort(this.checked
         ? function(a, b) { return b.generation - a.generation; }
-        : function(a, b) { return a.num_cit - b.num_cit; })
+        : function(a, b) { return a.name.length - b.name.length; })
         .each(function(d, i){
             d.y = yscale(i);
         })

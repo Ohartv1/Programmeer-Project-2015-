@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 
-<!-- Onno Hartveldt                             -->
-<!-- 10972935                                   -->
-<!-- Where to start reading?!                   -->
-<!-- Source: http://bl.ocks.org/sjengle/5431779 -->
+<!-- Onno Hartveldt                                                     -->
+<!-- 10972935                                                           -->
+<!-- "Wie zijn de nakomelingen van een wetenschappelijke publicatie?"   -->
+<!-- Source: http://bl.ocks.org/sjengle/5431779                         -->
 
 
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Where to start?!</title>
+
+        <!-- CSS Style //-->
         <link rel="stylesheet" href="./main.css" type="text/css">
 
         <!-- JavaScript Librarie D3 //-->
-        <script src="http://d3js.org/d3.v3.min.js"></script>
-
-        <!-- CSS Style //-->
-        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900|Source+Code+Pro:300" rel="stylesheet" type="text/css">
+        <script src="./d3.js"></script>
 
         <script src="./main.js"></script>
     </head>
     <body>
         <label><input type="checkbox"> Sort by generation </label>
-        <script>
-            d3.json("Connections.json", arcDiagram);
-        </script>
+        <script> d3.json("Articles_data.json", arcDiagram); </script>
     </body>
 </html>

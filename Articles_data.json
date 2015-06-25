@@ -1,0 +1,336 @@
+{
+  "nodes": [
+    {
+      "generation": 3, 
+      "date": "DEC 2014", 
+      "num_cit": 1, 
+      "name": "Body height, immunity, facial and vocal attractiveness in young men"
+    }, 
+    {
+      "generation": 4, 
+      "date": "SEP 2014", 
+      "num_cit": 2, 
+      "name": "Meta-Analyses and P-Curves Support Robust Cycle Shifts in Women's Mate Preferences: Reply to Wood and Carden (2014) and Harris, Pashler, and Mickes (2014)"
+    }, 
+    {
+      "generation": 3, 
+      "date": "SEP 2014", 
+      "num_cit": 1, 
+      "name": "Elastic Analysis Procedures: An Incurable (but Preventable) Problem in the Fertility Effect Literature. Comment on Gildersleeve, Haselton, and Fales (2014)"
+    }, 
+    {
+      "generation": 3, 
+      "date": "SEP 2014", 
+      "num_cit": 1, 
+      "name": "Elusiveness of Menstrual Cycle Effects on Mate Preferences: Comment on Gildersleeve, Haselton, and Fales (2014)"
+    }, 
+    {
+      "generation": 3, 
+      "date": "FRONTIERS IN HUMAN NEUROSCIENCE", 
+      "num_cit": 1, 
+      "name": "Recommendations for sex/gender neuroimaging research: key principles and implications for research design, analysis, and interpretation"
+    }, 
+    {
+      "generation": 3, 
+      "date": "JUL 2014", 
+      "num_cit": 1, 
+      "name": "Comment: Beyond \"Evolutionary versus Social\": Moving the Cycle Shift Debate Forward"
+    }, 
+    {
+      "generation": 2, 
+      "date": "JUL 2014", 
+      "num_cit": 10, 
+      "name": "Meta-Analysis of Menstrual Cycle Effects on Women's Mate Preferences"
+    }, 
+    {
+      "generation": 3, 
+      "date": "FRONTIERS IN PSYCHOLOGY", 
+      "num_cit": 1, 
+      "name": "The bachelor's to Ph.D. STEM pipeline no longer leaks more women than men: a 30-year analysis"
+    }, 
+    {
+      "generation": 3, 
+      "date": "2014", 
+      "num_cit": 2, 
+      "name": "Daily fluctuations in attention at school considering starting time and chronotype: an exploratory study"
+    }, 
+    {
+      "generation": 2, 
+      "date": "JAN 2014", 
+      "num_cit": 3, 
+      "name": "The new science of cognitive sex differences"
+    }, 
+    {
+      "generation": 2, 
+      "date": "10.1007/s11199-013-0315-y", 
+      "num_cit": 1, 
+      "name": "Feminism and Evolutionary Psychology: Moving Forward"
+    }, 
+    {
+      "generation": 1, 
+      "date": "MAY 2013", 
+      "num_cit": 13, 
+      "name": "The Nature-Nurture Debates: 25 Years of Challenges in Understanding the Psychology of Gender"
+    }, 
+    {
+      "generation": 4, 
+      "num_cit": 0, 
+      "name": "Pregnant Women's Preferences for Men's Faces Differ Significantly from Nonpregnant Women"
+    }, 
+    {
+      "generation": 5, 
+      "num_cit": 0, 
+      "name": "Looking Forward in Candidate Gene Research: Concerns and Suggestions"
+    }, 
+    {
+      "generation": 5, 
+      "num_cit": 0, 
+      "name": "The Extent and Consequences of P-Hacking in Science"
+    }, 
+    {
+      "generation": 4, 
+      "num_cit": 0, 
+      "name": "NEUROSCIENCE His brain, her brain?"
+    }, 
+    {
+      "generation": 4, 
+      "num_cit": 0, 
+      "name": "Author Reply: Once Again, Menstrual Cycles and Mate Preferences"
+    }, 
+    {
+      "generation": 3, 
+      "num_cit": 0, 
+      "name": "Menstrual Cycle Phase Does Not Predict Political Conservatism"
+    }, 
+    {
+      "generation": 3, 
+      "num_cit": 0, 
+      "name": "Human preferences for sexually dimorphic faces may be evolutionarily novel"
+    }, 
+    {
+      "generation": 3, 
+      "num_cit": 0, 
+      "name": "Provision or Good Genes? Menstrual Cycle Shifts in Women's Preferences for Short-Term and Long-Term Mates' Altruistic Behavior"
+    }, 
+    {
+      "generation": 4, 
+      "num_cit": 0, 
+      "name": "Leading scientists favour women in tenure-track hiring test"
+    }, 
+    {
+      "generation": 4, 
+      "num_cit": 0, 
+      "name": "Timing of Examinations Affects School Performance Differently in Early and Late Chronotypes"
+    }, 
+    {
+      "generation": 4, 
+      "num_cit": 0, 
+      "name": "Chronotype and time-of-day effects on mood during school day"
+    }, 
+    {
+      "generation": 3, 
+      "num_cit": 0, 
+      "name": "On the gender science stereotypes held by scientists: explicit accord with gender-ratios, implicit accord with scientific identity"
+    }, 
+    {
+      "generation": 3, 
+      "num_cit": 0, 
+      "name": "The Human Dark Side: Evolutionary Psychology and Original Sin"
+    }, 
+    {
+      "generation": 2, 
+      "num_cit": 0, 
+      "name": "Evaluating Gender Similarities and Differences Using Metasynthesis"
+    }, 
+    {
+      "generation": 2, 
+      "num_cit": 0, 
+      "name": "Revisiting gender differences: What we know and what lies ahead"
+    }, 
+    {
+      "generation": 2, 
+      "num_cit": 0, 
+      "name": "Voluntary and involuntary emotional memory following an analogue traumatic stressor: The differential effects of communality in men and women"
+    }, 
+    {
+      "generation": 2, 
+      "num_cit": 0, 
+      "name": "Feminism and Psychology Critiques of Methods and Epistemology"
+    }, 
+    {
+      "generation": 2, 
+      "num_cit": 0, 
+      "name": "Reasoning About Single-Sex Schooling for Girls Among Students, Parents, and Teachers"
+    }, 
+    {
+      "generation": 2, 
+      "num_cit": 0, 
+      "name": "Evidence for the Social Role Theory of Stereotype Content: Observations of Groups' Roles Shape Stereotypes"
+    }, 
+    {
+      "generation": 2, 
+      "num_cit": 0, 
+      "name": "Mixing of gender and trades: consequences for identity and working relationships"
+    }, 
+    {
+      "generation": 2, 
+      "num_cit": 0, 
+      "name": "Stress among Italian male and female patrol police officers: a quali-quantitative survey"
+    }, 
+    {
+      "generation": 2, 
+      "num_cit": 0, 
+      "name": "Biology or Culture Alone Cannot Account for Human Sex Differences and Similarities"
+    }
+  ], 
+  "links": [
+    {
+      "source": 0, 
+      "target": 12
+    }, 
+    {
+      "source": 1, 
+      "target": 13
+    }, 
+    {
+      "source": 1, 
+      "target": 14
+    }, 
+    {
+      "source": 2, 
+      "target": 1
+    }, 
+    {
+      "source": 3, 
+      "target": 1
+    }, 
+    {
+      "source": 4, 
+      "target": 15
+    }, 
+    {
+      "source": 5, 
+      "target": 16
+    }, 
+    {
+      "source": 6, 
+      "target": 17
+    }, 
+    {
+      "source": 6, 
+      "target": 0
+    }, 
+    {
+      "source": 6, 
+      "target": 18
+    }, 
+    {
+      "source": 6, 
+      "target": 2
+    }, 
+    {
+      "source": 6, 
+      "target": 3
+    }, 
+    {
+      "source": 6, 
+      "target": 1
+    }, 
+    {
+      "source": 6, 
+      "target": 4
+    }, 
+    {
+      "source": 6, 
+      "target": 5
+    }, 
+    {
+      "source": 6, 
+      "target": 16
+    }, 
+    {
+      "source": 6, 
+      "target": 19
+    }, 
+    {
+      "source": 7, 
+      "target": 20
+    }, 
+    {
+      "source": 8, 
+      "target": 21
+    }, 
+    {
+      "source": 8, 
+      "target": 22
+    }, 
+    {
+      "source": 9, 
+      "target": 23
+    }, 
+    {
+      "source": 9, 
+      "target": 7
+    }, 
+    {
+      "source": 9, 
+      "target": 8
+    }, 
+    {
+      "source": 10, 
+      "target": 24
+    }, 
+    {
+      "source": 11, 
+      "target": 25
+    }, 
+    {
+      "source": 11, 
+      "target": 26
+    }, 
+    {
+      "source": 11, 
+      "target": 27
+    }, 
+    {
+      "source": 11, 
+      "target": 28
+    }, 
+    {
+      "source": 11, 
+      "target": 29
+    }, 
+    {
+      "source": 11, 
+      "target": 30
+    }, 
+    {
+      "source": 11, 
+      "target": 31
+    }, 
+    {
+      "source": 11, 
+      "target": 6
+    }, 
+    {
+      "source": 11, 
+      "target": 5
+    }, 
+    {
+      "source": 11, 
+      "target": 32
+    }, 
+    {
+      "source": 11, 
+      "target": 9
+    }, 
+    {
+      "source": 11, 
+      "target": 10
+    }, 
+    {
+      "source": 11, 
+      "target": 33
+    }
+  ]
+}
