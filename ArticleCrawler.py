@@ -1,3 +1,8 @@
+    # Onno Hartveldt
+    # 10972935
+
+    # visualisation:
+    # "Wie zijn de nakomelingen van een wetenschappelijke publicatie?"
 
 import json, time, unicodedata, socket
 from pattern.web import URL, DOM, plaintext
