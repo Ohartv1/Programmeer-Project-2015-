@@ -10,8 +10,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 TARGET = "http://apps.webofknowledge.com"
-SEARCH_FOR = "The graph coloring problem: A neuronal network approach"
-temp = "The Nature-Nurture Debates: 25 Years of Challenges in Understanding the Psychology of Gender"
+SEARCH_FOR = "The Nature-Nurture Debates: 25 Years of Challenges in Understanding the Psychology of Gender"
 
 generation = 0
 archief = []
