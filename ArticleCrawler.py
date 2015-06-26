@@ -267,5 +267,5 @@ if __name__ == '__main__':
     output = data_to_connections(list_of_articles)
 
     # # parse and write to JSON
-    with open("graph.json", "a") as outfile:
+    with open("Articles_data.json", "a") as outfile:
         json.dump(output, outfile, indent=2)
