@@ -23,10 +23,10 @@ Wanneer een publicatie mogelijk interessant genoeg is om te markeren, kan door m
 Om de relaties van een publicatie te benadrukken kan dubbel geklikt worden op de desbetreffende knoop. De andere knopen worden dan in kleur intensiteit geminderd. Nogmaals een dubbel klik op een knoop en de intensiteit wordt weer hersteld.   
 De laatste interactie die mogelijk is betreft de sortering van de knopen. In een verse pagina zijn de knopen ongerelateerd aan de relatie tot andere publicaties door gesorteerd te zijn op de lengte van de titel. Onbewust kan dit worden gebruikt om positie veranderingen te detecteren. Na het markeren van de checkbox veranderen de positie van de knopen. De knopen sorteren zich per generatie. De oorsprong publicatie staat onderaan met de publicaties, die het artikel citeren, direct daarboven, zij vormen generatie 1. Daarboven de publicaties die volgen uit generatie 1 artikelen, etc. De meest recent gepubliceerde artikelen staan dus bovenaan.
 
-![interface schets] (/DOCS/1.PNG)  
-![interface schets] (/DOCS/2.PNG)  
-![interface schets] (/DOCS/3.PNG)  
-![interface schets] (/DOCS/4.PNG)  
+![interface schets] (/DOCS/1.png)  
+![interface schets] (/DOCS/2.png)  
+![interface schets] (/DOCS/3.png)  
+![interface schets] (/DOCS/4.png)  
 
 **data bron en inspiratie**
 
