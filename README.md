@@ -6,66 +6,34 @@ Onno Hartveldt
 juni 2015  
 
 
-Ontwerpvoorstel
+Een datavisualisatie:  
 -------
-
-**Probleemstelling**
-
-Hoe verhoudt het eerste artikel wat ik ga lezen voor een essay zich tot de rest?
+*Wie zijn de nakomelingen van een wetenschappelijke publicatie?*
 
 
-**Hoe zal de interface eruit zien?**
+**Centrale vraag**
 
-Statisch:
-Een artikel zal als uitgangspunt centraal worden weergegeven in een verticale Arc-diagram. De titles van de artikelen
-staan onder elkaar en kunnen per cluster gekleurd worden. Boven het artikel van uitgangspunt zullen de artikelen staan
-die het artikel refereren met de arcen rechts, onder het artikel van uitgangspunt de artikelen die het artikel citeerd
-met de arcen links.
-
-Dynamisch:
-De volgorde kan worden gesorteerd aan de hand van generatie, het aantal citaties, cluster of alfabetisch.
-Door het selecteren van een perifeer artikelen zal de positie worden overgenomen van het centrale uitgangspunt. 
-
-![interface schets] (/DOCS/DSC_0152.JPG)  
-  
-  
-**Data bron**
-
-De data wordt gescraped van PsyInfo en worden omgezet in een lijst van dictionaries per artikel. 
-
-[{Title: ,Doi: ,Reference: ,Cited: }, {...}]
+De vraag die centraal staat in de visualisatie is welke wetenschappelijke artikelen vinden gedeeltelijk hun oorsprong in een referentie die je wilt gaan gebruiken in je eigen essay. Zo zou je de publicatie van interesse voor gebruik op waarde kunnen schatten en is er misschien een recenter artikel ook van toegevoegde waarde voor je essay. 
 
 
-**Project onderdelen**
+**Interactie**
 
-Het project kan worden in de volgende onderdelen:
-* Data verzameling
-* Inplementatie:
-    * Statisch deel:
-        * Verticaal Arc-diagram
-        * Cluster kleuring
-    * Dynamisch deel:
-        * Sorteren:
-            * Aantal citatie
-            * Cluster
-            * Alfabetisch
-        * Herladen na wisseling van uitgangs artikel
-  
-        
-**Potenciele obstakels**
+De visualisatie heeft naast het uiterlijk van de Arc-diagram vier mogelijke interacties om de onderlinge relaties van de publicaties te ontdekken. Wanneer de muis een knoop raakt komt de titel van het artikel tevoorschijn. Bij het verwijderen van de muis van de knoop verdwijnt de titel weer gelijktijdig.  
+Wanneer een publicatie mogelijk interessant genoeg is om te markeren, kan door met de muis een enkele klik te geven op de knoop de titel langdurig zichtbaar gemaakt worden. Nogmaals een enkele klik zorgt ervoor dat de titel weer van het scherm verdwijnt.  
+Om de relaties van een publicatie te benadrukken kan dubbel geklikt worden op de desbetreffende knoop. De andere knopen worden dan in kleur intensiteit geminderd. Nogmaals een dubbel klik op een knoop en de intensiteit wordt weer hersteld.   
+De laatste interactie die mogelijk is betreft de sortering van de knopen. In een verse pagina zijn de knopen ongerelateerd aan de relatie tot andere publicaties door gesorteerd te zijn op de lengte van de titel. Onbewust kan dit worden gebruikt om positie veranderingen te detecteren. Na het markeren van de checkbox veranderen de positie van de knopen. De knopen sorteren zich per generatie. De oorsprong publicatie staat onderaan met de publicaties, die het artikel citeren, direct daarboven, zij vormen generatie 1. Daarboven de publicaties die volgen uit generatie 1 artikelen, etc. De meest recent gepubliceerde artikelen staan dus bovenaan.
 
-Mogelijk komt er een artikel voor met teveel citaties dan de visulatisatie aan kan. Er zal een beperking moeten 
-worden gesteld zodanig dat de probleemstelling beantwoord blijft.
+![interface schets] (/DOCS/1.PNG)  
+![interface schets] (/DOCS/2.PNG)
+![interface schets] (/DOCS/3.PNG)
+![interface schets] (/DOCS/4.PNG)
 
+**data bron en inspiratie**
 
-**Gelijksoortige visualisaties**
-
-In de eigenfactor visualisatie worden de relaties van publicaties in verschillende tijdschriften weergegeven.
-http://well-formed.eigenfactor.org/radial.html
-
-De visualisaties van web of science zijn opbasis van relaties van auteurs.
-http://webofscience.com
-
+http://webofscience.com  
+http://bl.ocks.org/sjengle/5431779  
+http://bost.ocks.org/mike/miserables/  
+http://bl.ocks.org/mbostock/3885705
 
     
 
